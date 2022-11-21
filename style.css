@@ -212,6 +212,12 @@ h6 {
   background-size: cover;
   min-height: 938px;
   position: relative;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.hero-section .container {
+  align-self: flex-end;
 }
 
 .hero-content {
@@ -256,11 +262,9 @@ h6 {
 }
 
 .countdown-section {
-  position: absolute;
   z-index: 10;
   color: var(--blue);
-  bottom: 27px;
-  width: 1180px;
+  width: 100%;
 }
 
 .countdown-box {
@@ -272,6 +276,7 @@ h6 {
 
 .countdown-box h4 {
   margin-bottom: 0px;
+  color: var(--blue);
 }
 
 .countdown-box p:last-child {
@@ -510,7 +515,7 @@ h6 {
 
 .outcomes-section ol {
   margin-top: 50px;
-  list-style-type: decimal;
+  list-style-type: none;
 }
 
 .outcomes-section ol ::marker {
@@ -527,7 +532,7 @@ h6 {
   font-weight: 600;
   line-height: 1.4;
   position: relative;
-  padding-left: 92px;
+  padding-left: 0px;
 }
 
 /******************************************
@@ -649,9 +654,7 @@ h6 {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .countdown-section {
-    width: 940px;
-  }
+
   .exp-block {
     padding: 40px 50px;
   }
@@ -681,13 +684,10 @@ h6 {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(112, 112, 112, 0.3);
   }
-  .hero-section,
-  .hero-section .container {
+  .hero-section {
     min-height: 1280px;
   }
-  .countdown-section {
-    width: 300px;
-  }
+
   .navbar-brand {
     margin-right: 0px;
   }
@@ -715,6 +715,16 @@ h6 {
   .hotel-reservation-section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .countdown-box {
+    padding: 20px;
+  }
+  .hotel-photo {
+    width: 350px;
+    height: 350px;
+  }
+  .navbar {
+    padding-top: 60px;
   }
 }
 
@@ -747,8 +757,7 @@ h6 {
   .invite-card-img img {
     height: 250px;
   }
-  .hero-section,
-  .hero-section .container {
+  .hero-section {
     min-height: 844px;
   }
   .exp-heading {
@@ -757,6 +766,26 @@ h6 {
   }
   .abs-photo-wrapper img {
     height: 300px;
+  }
+  .countdown-num {
+    font-size: 40px;
+  }
+  #countdown li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .countdown-box {
+    padding: 20px;
+  }
+  .outcomes-section ol li {
+    font-size: 18px;
+  }
+  .hotel-photo {
+    width: 300px;
+    height: 300px;
+  }
+  .navbar {
+    padding-top: 50px;
   }
 }
 
@@ -770,9 +799,7 @@ h6 {
   h1 span {
     font-size: 26px;
   }
-  .countdown-box {
-    max-width: 300px;
-  }
+
   .invite-section-intro {
     margin-bottom: 30px;
   }
@@ -809,6 +836,31 @@ h6 {
   .nysora-events h4,
   .nysora-events ul li {
     font-size: 20px;
+  }
+  .outcomes-section ol li {
+    font-size: 16px;
+  }
+  .hotel-photo {
+    width: 200px;
+    height: 200px;
+  }
+  .hotel-text,
+  .hotel-heading {
+    font-size: 18px;
+  }
+  .countdown-box {
+    padding: 10px;
+  }
+  #countdown li {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 12px;
+  }
+  .countdown-num {
+    font-size: 30px;
+  }
+  .navbar {
+    padding-top: 40px;
   }
 }
 
