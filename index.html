@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nysora</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="main-menu">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="img/nysora-logo-white.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header pt-3">
+            <div class="offcanvas-logo">
+              <a href="index.html"
+                ><img src="img/nysora-logo-white.png" alt=""
+              /></a>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-between flex-grow-1 me-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Outcomes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Agenda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+
+    <section class="hero-section" style="background-image: url('img/hero.png')">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            ANESTHESIA SUMMIT 23 <br />
+            12-14 <span>May Leuven, Belgium</span>
+          </h1>
+          <div class="hero-content-text">
+            <p>
+              The Anesthesia Summit brings together top medical professionals
+              and companies shaping the future in the fields of <br />
+              <span>Anesthesiology, Ultrasound, MSK, and Pain Medicine.</span>
+            </p>
+          </div>
+          <div class="btns-wrapper">
+            <a href="" class="btn btn-yellow">REGISTER NOW</a>
+          </div>
+        </div>
+        <div class="countdown-section">
+          <div class="row">
+            <div class="col-lg-5 col-md-10 mb-3 mb-lg-0 mx-auto">
+              <div
+                class="countdown-section-left countdown-box text-center text-lg-start h-100"
+              >
+                <h4>Tickets are limited!</h4>
+                <p>
+                  Secure your spot at our <br />
+                  first-of-its-kind event today!
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-10 mx-auto">
+              <div
+                class="countdown-section-right countdown-box h-100"
+                id="countdown-section"
+              >
+                <div id="countdown" class="text-center">
+                  <ul>
+                    <li><span id="days" class="countdown-num"></span>days</li>
+                    <li><span id="hours" class="countdown-num"></span>Hours</li>
+                    <li>
+                      <span id="minutes" class="countdown-num"></span>Minutes
+                    </li>
+                    <li>
+                      <span id="seconds" class="countdown-num"></span>Seconds
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Invitation section -->
+
+    <section
+      class="invite-section"
+      style="background-image: url('img/invite.png')"
+    >
+      <div class="container">
+        <div class="section-content">
+          <h3 class="text-center mx-auto">
+            The boutique education and networking <br />
+            experience in the heart of Europe
+          </h3>
+          <div class="invite-section-intro text-center mx-auto">
+            <p>
+              NYSORA invites you to the immersive, <br />
+              industry-leading education and networking experience in the world
+              of anesthesia.
+            </p>
+          </div>
+          <div class="cards-block">
+            <div class="row gx-lg-3 gy-5 gy-lg-0">
+              <div class="col-lg-4">
+                <div class="invite-card">
+                  <div class="invite-card-img img-hover-zoom">
+                    <img src="img/card1.jpg" alt="" />
+                    <div class="card-badge">Learn</div>
+                  </div>
+                  <div class="invite-text">
+                    Learn from the leading Anesthesiology, Ultrasound, MSK, and
+                    Pain Medicine experts, & join our live practice
+                    demonstrations.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="invite-card">
+                  <div class="invite-card-img img-hover-zoom">
+                    <img src="img/card2.jpg" alt="" />
+                    <div class="card-badge">Discuss</div>
+                  </div>
+                  <div class="invite-text">
+                    Discuss clinical trends, teaching protocols, and NYSORA
+                    Europe practice standards, & join the Pro-Con debates.
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="invite-card">
+                  <div class="invite-card-img img-hover-zoom">
+                    <img src="img/card3.jpg" alt="" />
+                    <div class="card-badge">Network</div>
+                  </div>
+                  <div class="invite-text">
+                    Network during the night shifts. Our summit melting pot
+                    brings together delegates, industry leaders, and faculty.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Exp Section -->
+
+    <section class="exp-section">
+      <div class="container-xxl">
+        <div class="exp-block">
+          <div class="exp-heading">Immersive 3-day experience</div>
+          <div class="row gy-5">
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp1.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Industry-leading experts including our own Dr Hadzic
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp2.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Lectures and discussions on the latest industry trends
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp3.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Prime spots in Leuven for networking melting pots
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp4.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Tour of Leuven, the renowned European Capital of Innovation
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp5.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Visit NYSORA’s Boutique workshop and video studio
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp6.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Fabled botanical University garden with medicinal herbs
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp7.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Violet Red, the World Champion of Massage therapy at NYSORA’s
+                  HQ
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="exp-card mx-auto">
+                <div class="exp-img img-hover-zoom mx-auto">
+                  <img src="img/exp8.jpg" alt="" />
+                </div>
+                <div class="exp-card-text">
+                  Diagnostic with personal coach extraordinaire Coach Fausto’s
+                  Body Lab
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="invite-block">
+          <div class="row align-items-center">
+            <div class="col-lg-5 order-2 order-lg-1">
+              <div class="abs-photo-wrapper text-center">
+                <img src="img/doctor.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-7 order-1 order-lg-2">
+              <div class="invite-heading">
+                NYSORA invites you to <br />
+                Anesthesia Summit 2023
+              </div>
+              <div class="invite-subheading">
+                <p>
+                  Drawing on our experience as the leading education provider in
+                  anesthesiology, critical care, ultrasound, MSK, and pain
+                  medicine for 3 decades, with 5 million followers.
+                </p>
+              </div>
+              <div class="nysora-events">
+                <h4>NYSORA EVENTS SO FAR</h4>
+                <ul>
+                  <li>10,000+ delegates</li>
+                  <li>500+ events</li>
+                  <li>20+ countries</li>
+                  <li>5 continents</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outcomes Section -->
+
+    <section
+      class="outcomes-section"
+      style="background-image: url('img/invite.png')"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-1">
+            <div class="section-content">
+              <h4 class="text-center">
+                Learning outcomes <br />
+                <span>
+                  After the Summit, the participants will be able to:
+                </span>
+              </h4>
+              <ol>
+                <li>
+                  Discuss innovative, promising, and effective practices in
+                  Anesthesiology, Pain, Bariatric Surgery, Opioid-Free
+                  Anesthesia, Regional Anesthesia, Nerve Blocks
+                </li>
+                <li>
+                  Understand the advantages and disadvantages of Exparel vs.
+                  Nerve Catheters, Wallans vs. Wrist Blocks for Hand Surgery,
+                  PVB vs. ESB for thoracic surgery, OFA vs. Low-Dose Opioid,
+                  Spinal vs. General Anesthesia for Hip Fracture, and PCEA vs.
+                  PVB
+                </li>
+                <li>Identify solutions for clinical challenges</li>
+                <li>
+                  Develop and expand interprofessional collaboration, and
+                  networks
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Speakers Section -->
+
+    <section
+      class="speakers-section"
+      style="background-image: url('img/invite.png')"
+    >
+      <div class="container">
+        <div class="section-content">
+          <h2 class="text-center">Speakers</h2>
+          <h6 class="text-center">Confirmed (more TBA)</h6>
+          <div class="speakers-block">
+            <div class="row gy-5">
+              <div class="col-lg-4 col-sm-6">
+                <div class="speaker-box text-center">
+                  <div class="speaker-img">
+                    <img src="img/sp1.jpg" alt="" />
+                  </div>
+                  <div class="speaker-name">Admir Hadzic (BE/USA)</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="speaker-box text-center">
+                  <div class="speaker-img">
+                    <img src="img/sp2.jpg" alt="" />
+                  </div>
+                  <div class="speaker-name">Jeff Gadsden (USA)</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="speaker-box text-center">
+                  <div class="speaker-img">
+                    <img src="img/sp3.jpg" alt="" />
+                  </div>
+                  <div class="speaker-name">Max Feinstein, (USA)</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="speaker-box text-center">
+                  <div class="speaker-img">
+                    <img src="img/sp4.jpg" alt="" />
+                  </div>
+                  <div class="speaker-name">Peter Merjavi (UK)</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="speaker-box text-center">
+                  <div class="speaker-img">
+                    <img src="img/sp5.jpg" alt="" />
+                  </div>
+                  <div class="speaker-name">Jan Paul Mulier (BE)</div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="speaker-box text-center">
+                  <div class="speaker-img">
+                    <img src="img/sp6.jpg" alt="" />
+                  </div>
+                  <div class="speaker-name">Catherine Vandepitte (BE)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hotel-reservation-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mt-lg-0">
+            <div class="hotel-photo">
+              <img src="img/hotel.jpg" alt="" />
+            </div>
+            <div class="hotel-name">Park Inn by Radisson Leuven</div>
+          </div>
+          <div class="col-lg-6">
+            <div class="section-content">
+              <div class="hotel-heading">
+                Park Inn By Radisson Leuven - Reservation Hotel Deals
+              </div>
+              <div class="hotel-text">
+                <p>
+                  The Park Inn by Radisson Leuven Hotel features 133 rooms for
+                  business or leisure travelers, complete with free Wi-Fi and
+                  in-room coffee and tea facilities. Book your accommodation
+                  through our website to receive a special discount reserved for
+                  the ANESTHESIA SUMMIT attendees.
+                </p>
+              </div>
+              <div class="btns-wrapper">
+                <a href="" class="btn btn-gold-outline"
+                  >BOOK NOW FOR SPECIAL RATES</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/main.js"></script>
+    <script>
+      var countDownDate = new Date("May 12, 2023 12:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        (document.getElementById("days").innerText = Math.floor(
+          distance / (1000 * 60 * 60 * 24)
+        )),
+          (document.getElementById("hours").innerText = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          )),
+          (document.getElementById("minutes").innerText = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          )),
+          (document.getElementById("seconds").innerText = Math.floor(
+            (distance % (1000 * 60)) / 1000
+          ));
+
+        if (distance < 0) {
+          document.getElementById("countdown-section").style.display = "none";
+
+          clearInterval(x);
+        }
+        //seconds
+      }, 1000);
+    </script>
+  </body>
+</html>
